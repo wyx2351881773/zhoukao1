@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h4>超星校园阅读系统</h4>
+        <p>
+            <span>正在阅读</span>
+            <span>已读完（2）</span>
+        </p>
+        <div class="tab box1">
+            数据1 数据1 数据1 数据1
+
+        </div>
+        <div class="tab box2">
+            数据2 数据2 数据2 数据2 数据2
+        </div>
+    </div>
+</body>
+<script>
+    var tab = document.querySelectorAll('tab');
+    var span = [...document.querySelectorAll('span')];
+    span.forEach(function(item, i) {
+        item.onclick = function() {
+            span.forEach(function(s, y) {
+                box[y].style.display = "none";
+            })
+            bodx[i].style.display = "block";
+        }
+    })
+</script>
+
+</html>
